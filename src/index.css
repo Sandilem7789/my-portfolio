@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&family=Oswald&family=Pacifico&family=Roboto&display=swap');
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+jumboPara{
+    font-size: 50px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
