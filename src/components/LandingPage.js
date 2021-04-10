@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 import { 
     Container,
     Jumbotron,
@@ -20,6 +26,8 @@ import {
     Fade,
     ButtonGroup   
  } from 'reactstrap';
+ 
+
 
 const LandingPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,64 +35,74 @@ const LandingPage = () => {
     const jumboToggle = () => setIsOpen(false)
 
     return (
-        <div>
-            <div>
-                <Navbar color="light" light expand="md">
+        <div className="backGround">
+            <div className="sm-col-12">
+                <Navbar color="dark" dark expand="md">
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/"><h4>Home</h4></NavLink>
-                            </NavItem> 
-
-                            <NavItem>
-                                <NavLink href="/"><h4>About Me</h4></NavLink>
-                            </NavItem>
-                            
-                            <NavItem>
-                                <NavLink href="/"><h4>Contact Me</h4></NavLink>
-                            </NavItem>
-
-                            <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                <h4>Hire Me</h4>
-                            </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        <h4>Contract</h4>
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        <h4>Full-Time</h4>
-                                    </DropdownItem>
-                                    <DropdownItem divider />
-                                    
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                        </Nav>
-                        <NavbarText>Simple Text</NavbarText>
+                        <Router>
+                            <Nav className="mr-auto" navbar>
+                                <NavItem>
+                                    <NavLink href="/" onClick={jumboToggle}>
+                                        <h4 className="navigateText"><Link to="/">home</Link></h4>
+                                    </NavLink>
+                                </NavItem> 
+                                <NavItem>
+                                    <NavLink href="/" onClick={jumboToggle}>
+                                        <h4 className="navigateText"><Link to="/about">about</Link></h4>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/" onClick={jumboToggle}>
+                                        <h4 className="navigateText"><Link to="/projects">projects</Link></h4>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/" onClick={jumboToggle}>
+                                        <h4 className="navigateText"><Link to="contact">contact</Link></h4>
+                                    </NavLink>
+                                </NavItem>
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav>
+                                        <h4 className="navigateText"><Link>hire me</Link></h4>
+                                    </DropdownToggle>
+                                    <DropdownMenu left dark>
+                                        <DropdownItem >
+                                            <h4 className="navigateText">as a freelancer</h4>
+                                        </DropdownItem>
+                                        <DropdownItem>
+                                            <h4 className="navigateText">full-time employee</h4>
+                                        </DropdownItem>
+                                        {/*<DropdownItem divider />*/}
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            </Nav>
+                        </Router>
                     </Collapse>
                 </Navbar>
             </div>
 
-            <Jumbotron className="" onClick={jumboToggle}>
+            <Jumbotron className="jumboStyle" onClick={jumboToggle}>
                 
-                <h1 className="display-3 mt-5 text-center">Hello, I'm Sandile</h1>
-                <p className="jumboPara text-center">I am a Front End Web Developer</p>
-                <hr className="my-5" color="white" />
-                <p className="lead">
-                    <Button color="primary" className="mt-0">Learn More</Button>
+                <h1 className="display-3 mt-5 text-center">
+                    Hello, I'm Sandile.
+                </h1>
+                <p className="jumboPara text-center">
+                    I am a Front End Web Developer
                 </p>
-                                </Jumbotron>
-            <Container>
-                <Row>
-                    <Col>
-                    
-                    </Col>
-                </Row>
-
-            </Container>
+                <div className="text-center">
+                    <ButtonGroup>
+                        <Button outline><span className="navigateText">home</span></Button>
+                        <Button outline><span className="navigateText">about</span></Button>
+                        <Button outline><span className="navigateText">projects</span></Button>
+                        <Button outline><span className="navigateText">contact</span></Button>
+                    </ButtonGroup>
+                </div>
+                <div className="myFooter">
+                    <p>footer text</p>
+                </div>
+            </Jumbotron>
         </div>
-        
     )
 }
 

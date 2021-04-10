@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&family=Oswald&family=Pacifico&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Pacifico&family=Roboto&display=swap');
 
 h1 {
   font-family: 'Pacifico', cursive;
 }
 
-jumboPara{
-    font-size: 50px;
+.navigateText {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 2.5vh;
+  margin-bottom: 0;
+}
+
+.jumboPara {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 28px;
 }
 
 body {
@@ -20,4 +27,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.myFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.backGround {
+  background-image: linear-gradient(green, );
+  color:black;
+}
+
+.jumboStyle {
+  background-color: white;
 }
