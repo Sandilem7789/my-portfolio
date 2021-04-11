@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
@@ -53,14 +52,10 @@ const LandingPage = () => {
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <NavLink onClick={jumboToggle}>
-                                        <h4 className="navigateText"><Link to="/">home</Link></h4>
+                                        <h4 className="navigateText"><Link to="/">about</Link></h4>
                                     </NavLink>
                                 </NavItem> 
-                                <NavItem>
-                                    <NavLink href="/about" >
-                                        <Link to="/about"><h4 className="navigateText" onClick={jumboToggle}>about</h4></Link>
-                                    </NavLink>
-                                </NavItem>
+
                                 <NavItem>
                                     <NavLink href="/" onClick={jumboToggle}>
                                         <h4 className="navigateText"><Link to="/projects">projects</Link></h4>
@@ -95,27 +90,24 @@ const LandingPage = () => {
                 </div>
 
                 <Jumbotron className="jumboStyle" onClick={jumboToggle}>
-                    <h1 className="display-4 mt-5 text-center">
+                    <h1 className="display-4 mt-5 text-center hello-text">
                         Hello, I'm Sandile.
                     </h1>
                     <p className="jumboPara text-center">
                         I am a Front End Web Developer
+                        <br/>
                     </p>
-                   
-                    
-
-                    <div className="myFooter">
-                        <p>footer text</p>
-                        <FontAwesomeIcon icon={["fab-3x", "github"]} />
+                    <div className="text-center social-icons">
+                        <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="black" />
+                        <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="#0e76a8" />
+                        <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" color="#4c68d7" />
+                        <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" color="#1DA1F2"/>
                     </div>
                 </Jumbotron>
             </div>
             <Switch>
                 
                 <Route exact path="/">
-                    <Home />
-                </Route>
-                <Route path="/about">
                     <About />
                 </Route>
                 <Route path="/contact">
