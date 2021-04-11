@@ -29,6 +29,7 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
+    NavbarText,
     ButtonGroup   
  } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,7 +47,7 @@ const LandingPage = () => {
         <Router>
             <div className="backGround">
                 <div className="sm-col-12">
-                    <Navbar color="dark" dark expand="md">
+                    <Navbar color="dark" dark expand="md" fixed="top">
                         <NavbarToggler onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav className="mr-auto" navbar>
@@ -85,7 +86,11 @@ const LandingPage = () => {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </Nav>
+                            
                         </Collapse>
+                        <NavbarText>
+                                <p className="brandName"><a href="/">Sandie Mathenjwa</a></p>
+                            </NavbarText>
                     </Navbar>
                 </div>
 
@@ -101,7 +106,7 @@ const LandingPage = () => {
 
                     <div className="myFooter">
                         <p>footer text</p>
-                        <FontAwesomeIcon icon={["fab", "github"]} />
+                        <FontAwesomeIcon icon={["fab-3x", "github"]} />
                     </div>
                 </Jumbotron>
             </div>
