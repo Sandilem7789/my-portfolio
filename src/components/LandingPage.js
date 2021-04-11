@@ -96,30 +96,7 @@ const LandingPage = () => {
                     <p className="jumboPara text-center">
                         I am a Front End Web Developer
                     </p>
-                    <div className="text-center">
-                        <ButtonGroup>
-                            <Button outline>
-                                <Link to="/">
-                                    <span className="navigateText">home</span>
-                                </Link>
-                            </Button>
-                            <Button outline>
-                                <Link to="/about">
-                                    <span className="navigateText">about</span>
-                                </Link>
-                            </Button>
-                            <Button outline>
-                                <Link to="/projects">
-                                    <span className="navigateText">projects</span>
-                                </Link>
-                            </Button>
-                            <Button outline>
-                                <Link to="/contact">
-                                    <span className="navigateText">contact</span>
-                                </Link>
-                            </Button>
-                        </ButtonGroup>
-                    </div>
+                   
                     
 
                     <div className="myFooter">
@@ -130,6 +107,9 @@ const LandingPage = () => {
             </div>
             <Switch>
                 
+                <Route exact path="/">
+                    <Home />
+                </Route>
                 <Route path="/about">
                     <About />
                 </Route>
