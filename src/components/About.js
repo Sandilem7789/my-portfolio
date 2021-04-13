@@ -35,7 +35,7 @@ const Home = () => {
                     <hr/>
                     
                     <Button color="primary" onClick={toggle} outline>More About Me</Button>
-                    <Fade in={fadeIn}  className="mt-3">
+                    <Fade in={fadeIn} hidden={!fadeIn} className="mt-3">
                         My services are available for businesses looking for websites/web apps, and also for 
                         employers looking to add a valuable member on their development team
                         <br/><br/>
@@ -45,20 +45,12 @@ const Home = () => {
                             <FontAwesomeIcon icon={faEnvelope} size="2x" color="#1DA1F2"/>
                         </a>
                         <br/><br/>
+                        <br/><br/>
 
-                        <Button color="primary" onClick={pfToggle} outline>View Projects that I have built</Button>
-                        <Fade in={pfFadeIn} className="mt-3">
+                        <Button color="primary" onClick={pfToggle} hidden={pfFadeIn && fadeIn} outline>View Projects that I have built</Button>
+
+                        <Fade in={pfFadeIn} hidden={!pfFadeIn} className="mt-3">
                             <Projects />
-                            <div>
-                                <div className="row">
-                                    <div className=" md-col-4">
-                                        <h1>Project 1</h1>
-                                    </div>
-                                    <div className=" md-col-4">
-                                        <h1>Project 2</h1>
-                                    </div>
-                                </div>
-                            </div>
                         </Fade>
                     </Fade>
                     </div>
