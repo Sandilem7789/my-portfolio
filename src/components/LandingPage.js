@@ -13,12 +13,10 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    useRouteMatch
+    Link
 } from 'react-router-dom';
 import { 
     Jumbotron,
-    Button,
     Collapse,
     Navbar,
     NavbarToggler,
@@ -30,14 +28,12 @@ import {
     DropdownMenu,
     DropdownItem,
     NavbarText,
-    ButtonGroup   
+    Breadcrumb,
+    BreadcrumbItem
  } from 'reactstrap';
-
 
  library.add(fab, faCheckSquare, faCoffee);
  
-
-
 const LandingPage = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -89,6 +85,13 @@ const LandingPage = () => {
                             </NavbarText>
                     </Navbar>
                 </div>
+                <div>
+                    <Breadcrumb tag="nav" listTag="div">
+                        <BreadcrumbItem className="breadcrumb-item" tag="a" href="/">About</BreadcrumbItem>
+                        <BreadcrumbItem className="breadcrumb-item" tag="a" href="/projects">Projects</BreadcrumbItem>
+                        <BreadcrumbItem className="breadcrumb-item" active tag="a" href="/contact">Contact</BreadcrumbItem>
+                    </Breadcrumb>
+                </div>
 
                 <Jumbotron className="jumboStyle" onClick={jumboToggle}>
                     <h1 className="display-4 mt-5 text-center hello-text">
@@ -107,7 +110,6 @@ const LandingPage = () => {
                 </Jumbotron>
             </div>
             <Switch>
-                
                 <Route exact path="/">
                     <About />
                 </Route>
