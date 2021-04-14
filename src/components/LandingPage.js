@@ -102,7 +102,7 @@ const LandingPage = () => {
                         <br/>
                     </p>
                     <div className="text-center social-icons">
-                        <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="black" />
+                        <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="#4078c0" />
                         <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="#0e76a8" />
                         <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" color="#4c68d7" />
                         <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" color="#1DA1F2"/>

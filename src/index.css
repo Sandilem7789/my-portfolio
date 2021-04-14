@@ -85,3 +85,11 @@ code {
   color: black;
   text-shadow: -2px 2px 60px blue;
 }
+
+/*this is for "hi there my name is Sandile"*/
+.leftText {
+  text-align: right;
+}
+.rightText {
+  text-align: left;
+}
