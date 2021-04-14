@@ -32,7 +32,14 @@ import {
     BreadcrumbItem
  } from 'reactstrap';
 
+ import { motion, Toggle } from "framer-motion";
+
  library.add(fab, faCheckSquare, faCoffee);
+
+ const variants = {
+    open: {opacity: 1, x: 0},
+    closed: {opacity: 0, x: "-100%"}
+ }
  
 const LandingPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +51,7 @@ const LandingPage = () => {
             <div className="backGround">
                 <div className="sm-col-12">
                     <Navbar color="dark" dark expand="md" fixed="top">
+
                         <NavbarToggler onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav className="mr-auto" navbar>

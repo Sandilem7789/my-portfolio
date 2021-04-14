@@ -8,7 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Projects from "./Projects";
 
-library.add(fab,);
+import { motion } from "framer-motion";
+
+library.add(fab);
 
 //icons of my stack
 const ToolsIcons = () => {
@@ -78,7 +80,6 @@ const Home = () => {
                             </div>
                         </div>
                         
-                        
                         <ToolsIcons />
                         <hr/>
                         
@@ -86,22 +87,19 @@ const Home = () => {
                         <Fade in={fadeIn} hidden={!fadeIn} className="mt-3">
                             <div className="row">
                                 <div className="col-md-8 pl-5 leftText">
-                                    My services are available for businesses looking for online real estate, 
-                                    use the internet for fast track their growth and also for 
+                                    My services are available for businesses looking a developer to
+                                    build them a web app or a website and also for 
                                     employers looking to add a valuable member on their development team
                                     <br/><br/>
                                 </div>
                                 <div className="col-md-4 pl-5 pr-5 rightText">
                                     Feel free to contact me via <a href="mailto:sandilem_1@live.com">email</a> if you want get in touch. <br/>
-                            
                                     <a href="mailto:sandilem_1@live.com">
                                         <FontAwesomeIcon icon={faEnvelope} size="3x" color="#1DA1F2"/>
                                     </a>
                                     <br/>
-
                                 </div>
                             </div>
-                            
                             
                             <Button 
                                 color="primary" 
