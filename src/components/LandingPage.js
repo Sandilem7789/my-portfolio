@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import Bounce from "react-reveal/Bounce";
+
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -32,14 +34,9 @@ import {
     BreadcrumbItem
  } from 'reactstrap';
 
- import { motion, Toggle } from "framer-motion";
-
  library.add(fab, faCheckSquare, faCoffee);
 
- const variants = {
-    open: {opacity: 1, x: 0},
-    closed: {opacity: 0, x: "-100%"}
- }
+ 
  
 const LandingPage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +48,6 @@ const LandingPage = () => {
             <div className="backGround">
                 <div className="sm-col-12">
                     <Navbar color="dark" dark expand="md" fixed="top">
-
                         <NavbarToggler onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav className="mr-auto" navbar>
@@ -89,7 +85,7 @@ const LandingPage = () => {
                             
                         </Collapse>
                         <NavbarText>
-                                <p className="brandName"><a href="/">Sandie Mathenjwa</a></p>
+                                <p className="brandName"><a href="/">Sandile Mathenjwa</a></p>
                             </NavbarText>
                     </Navbar>
                 </div>
@@ -102,9 +98,13 @@ const LandingPage = () => {
                 </div>
 
                 <Jumbotron className="jumboStyle" onClick={jumboToggle}>
-                    <h1 className="display-4 mt-5 text-center hello-text">
-                        Hello, I'm Sandile.
-                    </h1>
+                        <Bounce right cascade>
+                            <h1 className="display-4 mt-0 text-center hello-text">
+                                <div>
+                                    Hello,I'm Sandile.
+                                </div>
+                            </h1>
+                        </Bounce>
                     <p className="jumboPara text-center">
                         I am a Front End Web Developer
                         <br/>
@@ -129,7 +129,6 @@ const LandingPage = () => {
                 </Route>
             </Switch>
         </Router>
-        
     )
 }
 

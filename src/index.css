@@ -83,13 +83,17 @@ code {
 
 .hello-text {
   color: black;
-  text-shadow: -2px 2px 60px blue;
+  text-shadow: -2px 2px 60px darkslategrey;
 }
 
 /*this is for "hi there my name is Sandile"*/
-.leftText {
-  text-align: right;
+
+
+.leftText .rightText {
+  text-align: center;
 }
-.rightText {
-  text-align: left;
+
+.in-my-builds {
+  margin-block-end: auto;
 }
+

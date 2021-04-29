@@ -14,7 +14,7 @@ function CardElement({projName, projDisc}) {
                     <CardText className="aboutText" style={{color: "black" }}>
                         {projDisc}
                     </CardText>
-                    <div className="text-center">
+                    <div className="text-center" style={{display: "flex", justifyContent: "space-around"}}>
                         <Button>Demo</Button>
                         <Button>GitHub</Button>
                     </div>
