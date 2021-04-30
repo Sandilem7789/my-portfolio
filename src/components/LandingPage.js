@@ -110,10 +110,30 @@ const LandingPage = () => {
                         <br/>
                     </p>
                     <div className="text-center social-icons">
-                        <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="#4078c0" />
-                        <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="#0e76a8" />
-                        <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" color="#4c68d7" />
-                        <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" color="#1DA1F2"/>
+                        <a href="#" className="contactIcon">
+                            <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="#4078c0" />
+                            <div className="iconText">
+                                GitHub
+                            </div>
+                        </a>
+                        <a href="#" className="contactIcon">
+                            <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="#0e76a8" />
+                            <div className="iconText">
+                                LinkedIn
+                            </div>
+                        </a>
+                        <a href="#" className="contactIcon">
+                            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" color="#4c68d7" />
+                            <div className="iconText">
+                                Instagram
+                            </div>
+                        </a>
+                        <a href="#" className="contactIcon">
+                            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" color="#1DA1F2"/>
+                            <div className="iconText">
+                                Twitter
+                            </div>
+                        </a>
                     </div>
                 </Jumbotron>
             </div>
@@ -126,6 +146,7 @@ const LandingPage = () => {
                 </Route>
                 <Route path="/projects">
                     <Projects />
+                    <div className="pb-3"></div>
                 </Route>
             </Switch>
         </Router>

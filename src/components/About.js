@@ -100,17 +100,23 @@ const Home = () => {
                                 <br/>
                             </div>
                         </div>
-                        
                         <ToolsIcons />
+                        <br/>
                         <hr/>
+                        <br/>
                         
-                        <Button color="primary" onClick={toggle} outline style={{marginBottom: "20px"}}>More About Me</Button>
-                        <Rotate>
+                        <Button 
+                            color="primary" 
+                            onClick={toggle} 
+                            outline style={{marginBottom: "20px"}}
+                            href="#more"
+                        >More About Me</Button>
+                        
                         <Fade in={fadeIn} hidden={!fadeIn} className="mt-3">
-                            <div className="row">
+                            <div className="row" id="more">
                                 <div className="col-md-12 pl-5 leftText">
                                     My services are available for businesses looking to work with a developer to
-                                    build web apps or a websites and also for 
+                                    build web apps or websites and also for 
                                     employers looking to add a valuable member on their Front-End web development team
                                     <br/><br/>
                                 </div>
@@ -119,7 +125,9 @@ const Home = () => {
                                     <a href="mailto:sandilem_1@live.com">
                                         <FontAwesomeIcon icon={faEnvelope} size="3x" color="#1DA1F2"/>
                                     </a>
+                            <div id="projects"></div>
                                     <br/>
+                                    <br/>   
                                 </div>
                             </div>
                             
@@ -129,11 +137,11 @@ const Home = () => {
                                 hidden={pfFadeIn && fadeIn} 
                                 outline
                                 className="mt-3 mb-5"
+                                href="#projects"
                             >
                                 View Projects that I have built
                             </Button>
                         </Fade>
-                        </Rotate>
                     </div>
                 </div>
                 <Fade in={pfFadeIn} hidden={!pfFadeIn} className="mt-3">
