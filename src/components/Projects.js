@@ -27,8 +27,8 @@ function CardElement({projName, projDisc}) {
 const Projects = () => {
     return (
         <div className="container pb-3">
-            <h2 className="text-center pb-4">Projects</h2>
-            <div className="row pb-5">
+            <h1 className="text-center pb-4">Projects</h1>
+            <div className="row pb-5 pt-4">
                 <div className="col-md-4">
                     <CardElement 
                         projName="CardElement Component"
