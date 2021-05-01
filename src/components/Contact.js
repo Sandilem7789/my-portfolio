@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="container text-center">
             <h1>Contact</h1>
             <p className="aboutText">
-                Feel free to contact me via email should you want to get in touch 
+                Feel free to contact me via <a href="mailto:sandilem_1@live.com">email</a> should you want to get in touch 
                 with me or talk about a project 
                 <br/>
                 <a href="mailto:sandilem_1@live.com">

@@ -110,30 +110,31 @@ const LandingPage = () => {
                         <br/>
                     </p>
                     <div className="text-center social-icons">
-                        <a href="#" className="contactIcon">
+                        <a href="https://github.com/Sandilem7789" className="contactIcon">
                             <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="#4078c0" />
                             <div className="iconText">
                                 GitHub
                             </div>
                         </a>
-                        <a href="#" className="contactIcon">
-                            <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="#0e76a8" />
-                            <div className="iconText">
-                                LinkedIn
-                            </div>
-                        </a>
-                        <a href="#" className="contactIcon">
+                        <a href="https://www.instagram.com/tgsandile/" className="contactIcon">
                             <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" color="#4c68d7" />
                             <div className="iconText">
                                 Instagram
                             </div>
                         </a>
-                        <a href="#" className="contactIcon">
+                        <a href="https://www.twitter.com/thegreatsandile" className="contactIcon">
                             <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" color="#1DA1F2"/>
                             <div className="iconText">
                                 Twitter
                             </div>
                         </a>
+                        <a href="https://www.linkedin.com/in/sandile-mathenjwa-869140144/" className="contactIcon">
+                            <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="#0e76a8" />
+                            <div className="iconText">
+                                LinkedIn
+                            </div>
+                        </a>
+                        
                     </div>
                 </Jumbotron>
             </div>

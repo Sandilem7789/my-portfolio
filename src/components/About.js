@@ -93,8 +93,8 @@ const Home = () => {
                                 <br />
                                 <br />
                                 <span className="in-my-builds">
-                                    My tools: HTML, CSS, JavaScript, React.js, Bootstrap,
-                                    Node.js, Express.js, SCSS, Gulp, Git, Github and npm
+                                    My tools: JavaScript, CSS, HTML, React.js, Bootstrap, Materail UI,
+                                    Node.js, Yarn, Express.js, Git, Github and npm
                                 </span>
                                 <br/>
                                 <br/>

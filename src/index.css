@@ -106,3 +106,20 @@ code {
   margin-block-end: auto;
 }
 
+/*Hiding Icon Labels*/
+.iconText {
+  text-decoration: none;
+  color: black;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: small;
+}
+
+.iconText:hover {
+  text-decoration: underline #e9ecef;
+
+}
+
+.contactIcon:hover {
+  font-size: 1.1em;
+  transition: 0.15s ease-out;
+}
