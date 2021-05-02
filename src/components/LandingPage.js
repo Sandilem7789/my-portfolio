@@ -72,12 +72,25 @@ const LandingPage = () => {
                                         <h4 className="navigateText"><Link>hire me</Link></h4>
                                     </DropdownToggle>
                                     <DropdownMenu left dark>
-                                        <DropdownItem >
-                                            <h4 className="navigateText">as a freelancer</h4>
-                                        </DropdownItem>
-                                        <DropdownItem>
-                                            <h4 className="navigateText">full-time employee</h4>
-                                        </DropdownItem>
+                                        <a  
+                                            className="navigateText"
+                                            href="mailto:sandilem_1@live.com"
+                                            style={{color: "black"}}
+                                        >
+                                            <DropdownItem >
+                                                as a freelancer
+                                            </DropdownItem>
+                                        </a>
+                                        <a  
+                                            className="navigateText"
+                                            href="mailto:sandilem_1@live.com"
+                                            style={{color: "black"}}
+                                        >
+                                            <DropdownItem >
+                                                as an employee
+                                            </DropdownItem>
+                                        </a>
+                                        
                                         {/*<DropdownItem divider />*/}
                                     </DropdownMenu>
                                 </UncontrolledDropdown>

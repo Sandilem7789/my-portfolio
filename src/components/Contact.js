@@ -6,6 +6,10 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Zoom from 'react-reveal/Zoom';
+import Jello from 'react-reveal/Jello';
+import Flip from 'react-reveal/Flip';
+
 import Projects from "./Projects";
 
 library.add(fab, faCheckSquare, faCoffee);
@@ -16,14 +20,18 @@ const Contact = () => {
     const toggle = () => setFadeIn(!fadeIn)
     return (
         <div className="container text-center">
-            <h1>Contact</h1>
+            <Zoom>
+                <h1>Contact</h1>
+            </Zoom>
             <p className="aboutText">
                 Feel free to contact me via <a href="mailto:sandilem_1@live.com">email</a> should you want to get in touch 
                 with me or talk about a project 
                 <br/>
-                <a href="mailto:sandilem_1@live.com">
-                    <FontAwesomeIcon icon={faEnvelope} size="5x" color="#1DA1F2"/>
-                </a>
+                <Flip>
+                    <a href="mailto:sandilem_1@live.com">
+                        <FontAwesomeIcon icon={faEnvelope} size="5x" color="#1DA1F2"/>
+                    </a>
+                </Flip>
                 <br/>
                 <br/>
                 <Button 
