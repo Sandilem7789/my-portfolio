@@ -102,13 +102,13 @@ const LandingPage = () => {
                             </NavbarText>
                     </Navbar>
                 </div>
-                <div>
+                {/*<div>
                     <Breadcrumb tag="nav" listTag="div">
                         <BreadcrumbItem className="breadcrumb-item" tag="a" href="/">About</BreadcrumbItem>
                         <BreadcrumbItem className="breadcrumb-item" tag="a" href="/projects">Projects</BreadcrumbItem>
                         <BreadcrumbItem className="breadcrumb-item" active tag="a" href="/contact">Contact</BreadcrumbItem>
                     </Breadcrumb>
-                </div>
+                </div>*/}
 
                 <Jumbotron className="jumboStyle" onClick={jumboToggle}>
                         <Bounce right cascade>

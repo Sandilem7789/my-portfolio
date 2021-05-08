@@ -7,7 +7,6 @@ import { faCheckSquare, faCoffee, faEnvelope } from "@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Zoom from 'react-reveal/Zoom';
-import Jello from 'react-reveal/Jello';
 import Flip from 'react-reveal/Flip';
 
 import Projects from "./Projects";

@@ -108,9 +108,18 @@ const Home = () => {
                         <Button 
                             color="primary" 
                             onClick={toggle} 
+                            hidden={fadeIn}
                             outline style={{marginBottom: "20px"}}
                             href="#more"
                         >More About Me</Button>
+
+                        <Button 
+                            color="primary" 
+                            onClick={toggle} 
+                            hidden={!fadeIn}
+                            outline style={{marginBottom: "20px"}}
+                            href="#more"
+                        >Less About Me</Button>
                         
                         <Fade in={fadeIn} hidden={!fadeIn} className="mt-3">
                             <div className="row" id="more">
@@ -140,6 +149,16 @@ const Home = () => {
                                 href="#projects"
                             >
                                 View Projects that I have built
+                            </Button>
+                            <Button 
+                                color="primary" 
+                                onClick={pfToggle} 
+                                hidden={!pfFadeIn} 
+                                outline
+                                className="mt-3 mb-5"
+                                href="#projects"
+                            >
+                                Hide Projects that I have built
                             </Button>
                         </Fade>
                     </div>
