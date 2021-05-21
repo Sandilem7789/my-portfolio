@@ -30,8 +30,8 @@ import {
     DropdownMenu,
     DropdownItem,
     NavbarText,
-    Breadcrumb,
-    BreadcrumbItem
+    /*Breadcrumb,
+    BreadcrumbItem*/
  } from 'reactstrap';
 
  library.add(fab, faCheckSquare, faCoffee);
