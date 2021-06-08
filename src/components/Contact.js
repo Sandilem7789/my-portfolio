@@ -35,11 +35,22 @@ const Contact = () => {
                 <br/>
                 <Button 
                     color="primary" 
-                    outline onClick={toggle} 
+                    outline onClick={toggle}
+                    hidden={fadeIn} 
                     className="mb-4 mt-3" 
                     href="#projects"
                 >
-                    View Projects I have Worked On</Button>
+                    View Projects I have Worked On
+                </Button>
+                <Button 
+                    color="primary" 
+                    outline onClick={toggle}
+                    hidden={!fadeIn} 
+                    className="mb-4 mt-3" 
+                    href="#projects"
+                >
+                    Hide Projects I have Worked On
+                </Button>
                 <div id="projects"></div>
                 <Fade in={fadeIn} hidden={!fadeIn} className="mt-4 text-center">
                     <Projects />
