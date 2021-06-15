@@ -8,7 +8,7 @@ import Bounce from "react-reveal/Bounce";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faBorderNone, faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
@@ -49,11 +49,11 @@ const LandingPage = () => {
                 <div className="sm-col-12">
                     <Navbar color="dark" dark expand="md" fixed="top">
                         <NavbarToggler onClick={toggle} />
-                        <Collapse isOpen={isOpen} navbar>
-                            <Nav className="mr-auto" navbar>
+                        <Collapse isOpen={isOpen} navbar >
+                            <Nav className="mr-auto" navbar style={{textDecoration: "none"}}>
                                 <NavItem>
                                     <NavLink onClick={jumboToggle}>
-                                        <h4 className="navigateText"><Link to="/">about</Link></h4>
+                                        <h4 className="navigateText" ><Link to="/">about</Link></h4>
                                     </NavLink>
                                 </NavItem> 
 
@@ -75,7 +75,7 @@ const LandingPage = () => {
                                         <a  
                                             className="navigateText"
                                             href="mailto:sandilem_1@live.com"
-                                            style={{color: "black"}}
+                                            style={{color: "black", textDecoration: "none"}}
                                         >
                                             <DropdownItem >
                                                 as a freelancer
@@ -84,9 +84,9 @@ const LandingPage = () => {
                                         <a  
                                             className="navigateText"
                                             href="mailto:sandilem_1@live.com"
-                                            style={{color: "black"}}
+                                            style={{color: "black", textDecoration: "none"}}
                                         >
-                                            <DropdownItem >
+                                            <DropdownItem style={{color: "black", textDecoration: "none"}}>
                                                 as an employee
                                             </DropdownItem>
                                         </a>
@@ -112,7 +112,7 @@ const LandingPage = () => {
 
                 <Jumbotron className="jumboStyle" onClick={jumboToggle}>
                         <Bounce right cascade>
-                            <h1 className="display-4 mt-0 text-center hello-text">
+                            <h1 className="display-5 mt-5 text-center hello-text" style={{fontSize: "10vh"}}>
                                 <div>
                                     Hello,I'm Sandile.
                                 </div>

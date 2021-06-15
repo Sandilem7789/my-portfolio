@@ -123,3 +123,7 @@ code {
   font-size: 1.1em;
   transition: 0.15s ease-out;
 }
+
+h4 {
+  text-decoration: none;
+}
