@@ -13,7 +13,7 @@ function CardElement({projName, projDisc}) {
         <div className="pb-3">
             <Jello>
                 <Card>
-                    <CardImg top width="100" src="" alt={projName} />
+                    {/*<CardImg top width="100" src="" alt={projName} />*/}
                     <CardBody>
                         <CardTitle>{projName}</CardTitle>
                         <CardText className="aboutText" style={{color: "black" }}>
@@ -37,7 +37,7 @@ const Projects = () => {
                 <h1 className="text-center pb-4">Projects</h1>
             </Zoom>
             <div className="row pb-5 pt-4">
-                <div className="col-md-4">
+                {/*<div className="col-md-4">
                     <CardElement 
                         projName="Project 1"
                         projDisc="This is an online store for a spaza shop
@@ -59,6 +59,14 @@ const Projects = () => {
                         projDisc="Isintu.org is a movement that aims to inform the youth from
                         rural areas about the possibilities of using technology as a tool instead 
                         of only consuming it as entertainment alone."
+                    />
+                </div>*/}
+
+                <div className="col-md-4 mx-auto">
+                    <CardElement 
+                        projName="My Profile"
+                        projDisc="This is my portfolio website. Tools that were used in this build 
+                        include: ReactJS, Reactsrap, CSS, Framer-Motion and Fontawesome Icons"
                     />
                 </div>
                 
