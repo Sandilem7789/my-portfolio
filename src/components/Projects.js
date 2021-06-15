@@ -4,7 +4,7 @@ import {
     CardTitle, Button
 } from "reactstrap";
 
-//Animations
+//Animations Libraries
 import Zoom from 'react-reveal/Zoom';
 import Jello from 'react-reveal/Jello';
 
