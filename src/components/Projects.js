@@ -8,20 +8,20 @@ import {
 import Zoom from 'react-reveal/Zoom';
 import Jello from 'react-reveal/Jello';
 
-function CardElement({projName, projDisc}) {
+function CardElement({projName, projDisc, demoLink, gitRepo}) {
     return(
         <div className="pb-3">
             <Jello>
                 <Card>
                     {/*<CardImg top width="100" src="" alt={projName} />*/}
                     <CardBody>
-                        <CardTitle>{projName}</CardTitle>
+                        <CardTitle className="display-4 mt-0 text-center hello-text" style={{fontFamily: "'Pacifico', cursive"}}>{projName}</CardTitle>
                         <CardText className="aboutText" style={{color: "black" }}>
                             {projDisc}
                         </CardText>
                         <div className="text-center" style={{display: "flex", justifyContent: "space-around"}}>
-                            <Button>Demo</Button>
-                            <Button>GitHub</Button>
+                            <Button href={demoLink}>Demo</Button>
+                            <Button href={gitRepo}>GitHub</Button>
                         </div>
                     </CardBody>
                 </Card>
@@ -64,9 +64,11 @@ const Projects = () => {
 
                 <div className="col-md-4 mx-auto">
                     <CardElement 
-                        projName="My Profile"
+                        projName="Hello, I'm Sandile"
                         projDisc="This is my portfolio website. Tools that were used in this build 
                         include: ReactJS, Reactsrap, CSS, Framer-Motion and Fontawesome Icons"
+                        demoLink="/"
+                        gitRepo="https://github.com/Sandilem7789/my-portfolio"
                     />
                 </div>
                 
