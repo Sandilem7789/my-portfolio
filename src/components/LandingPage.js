@@ -50,26 +50,45 @@ const LandingPage = () => {
                     <Navbar color="dark" dark expand="md" fixed="top">
                         <NavbarToggler onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar >
-                            <Nav className="mr-auto" navbar style={{textDecoration: "none"}}>
+                            <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <NavLink onClick={jumboToggle}>
-                                        <h4 className="navigateText" ><Link to="/">about</Link></h4>
+                                        <h4 className="navigateText">
+                                            <Link 
+                                                to="/#greeter"
+                                                style={{color: "white", textDecoration: "none"}}
+                                            >about</Link>
+                                        </h4>
                                     </NavLink>
                                 </NavItem> 
 
                                 <NavItem>
-                                    <NavLink href="/" onClick={jumboToggle}>
-                                        <h4 className="navigateText"><Link to="/projects">projects</Link></h4>
+                                    <NavLink href="/">
+                                        <h4 className="navigateText">
+                                            <Link 
+                                                to="/projects"
+                                                style={{color: "white", textDecoration: "none"}}
+                                            >projects</Link>
+                                        </h4>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="/" onClick={jumboToggle}>
-                                        <h4 className="navigateText"><Link to="contact">contact</Link></h4>
+                                        <h4 className="navigateText">
+                                            <Link 
+                                                to="contact"
+                                                style={{color: "white", textDecoration: "none"}}
+                                            >contact</Link>
+                                        </h4>
                                     </NavLink>
                                 </NavItem>
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav>
-                                        <h4 className="navigateText"><Link>hire me</Link></h4>
+                                        <h4 className="navigateText">
+                                            <Link
+                                                style={{color: "white", textDecoration: "none"}}
+                                            >hire me</Link>
+                                        </h4>
                                     </DropdownToggle>
                                     <DropdownMenu left dark>
                                         <a  
@@ -95,11 +114,10 @@ const LandingPage = () => {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </Nav>
-                            
                         </Collapse>
                         <NavbarText>
-                                <p className="brandName"><a href="/">Sandile Mathenjwa</a></p>
-                            </NavbarText>
+                            <p className="brandName"><a href="/">Sandile Mathenjwa</a></p>
+                        </NavbarText>
                     </Navbar>
                 </div>
                 {/*<div>
@@ -110,9 +128,13 @@ const LandingPage = () => {
                     </Breadcrumb>
                 </div>*/}
 
-                <Jumbotron className="jumboStyle" onClick={jumboToggle}>
+                <Jumbotron className="jumboStyle" onClick={!jumboToggle}>
                         <Bounce right cascade>
-                            <h1 className="display-5 mt-5 text-center hello-text" style={{fontSize: "10vh"}}>
+                            <h1 
+                                className="display-5 mt-5 text-center hello-text" 
+                                id="greeter"
+                                style={{fontSize: "10vh"}}
+                            >
                                 <div>
                                     Hello,I'm Sandile.
                                 </div>
