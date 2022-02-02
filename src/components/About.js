@@ -134,7 +134,7 @@ const Home = () => {
                                     <a href="mailto:sandilem_1@live.com">
                                         <FontAwesomeIcon icon={faEnvelope} size="3x" color="#1DA1F2"/>
                                     </a>
-                            <div id="projects"></div>
+                                    <div id="projects"></div>
                                     <br/>
                                     <br/>   
                                 </div>
